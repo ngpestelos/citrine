@@ -13,10 +13,10 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-  name = 'OPML Parser',
+  name = 'Citrine',
   version = '0.1',
-  description = 'Python library for parsing OPML file',
-  long_description = """Parses an OPML file and creates a list.""",
+  description = 'Python library for parsing OPML files',
+  long_description = """Parses an OPML file and creates a list. Currently used for feed lists.""",
   author = 'Nestor G Pestelos Jr',
   author_email = 'ngpestelos@gmail.com',
   license = 'BSD',
@@ -24,7 +24,7 @@ setup(
   zip_safe = True,
   classifiers = [
       'Development Status :: 3 - Alpha'],
-  packages = ['opml'],
+  packages = ['citrine'],
   test_suite = '',
   install_requires = []
 )
