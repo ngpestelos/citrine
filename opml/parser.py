@@ -1,5 +1,19 @@
-# Parse an OPML file and return a reading list
-# Outlines can be nested (for now limited to two levels deep)
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2009 Nestor G Pestelos Jr
+# All rights reserved.
+#
+# This software is licensed as described in the file COPYING, which
+# you should have received as part of this distribution.
+
+"""Parse an OPML file and return a reading list.
+
+    Outlines can be nested (currently used for outlines two levels deep)
+
+>>>> import opml.parser
+>>>> outlines = parser.get_outlines('google-reader-subscriptions.xml')
+"""
+
 from xml.dom import minidom
 
 def process_outline(element):
