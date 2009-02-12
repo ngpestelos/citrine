@@ -35,6 +35,3 @@ def get_outlines(filename='google-reader-subscriptions.xml'):
 
 def find_outline(outlines, title):
     return [outline for outline in outlines if outline['title'] == title]
-
-o = get_outlines()
-print find_outline(o, 'zzz')
