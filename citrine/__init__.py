@@ -6,9 +6,9 @@
 # This software is licensed as described in the file COPYING, which
 # you should have received as part of this distribution.
 
-from opml import *
+from citrine import *
 
 try:
-    __version__ = __import__('pkg_resources').get_distribution('OPML_Parser').version
+    __version__ = __import__('pkg_resources').get_distribution('Citrine').version
 except:
     __version__ = '?'
